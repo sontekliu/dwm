@@ -24,3 +24,7 @@ dwm 启动后，自动启动某些脚本
 ### 6. dwm-pertag-perseltag-6.2.diff
 
 每个 tag 显示不同的布局
+
+### 7. dwm-scratchpad-20240321-061e9fe.diff
+
+临时打开一个面板
