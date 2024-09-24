@@ -27,6 +27,14 @@ static const char *colors[][3]      = {
 /* tagging */
 static const char *tags[] = { " 󰣇 ", "  ", "  ", "  ", "  ", "  ", " 󰨞 ", "  ", "  " };
 
+/* launcher commands (They must be NULL terminated) */
+static const char* chrome[] = { "google-chrome-stable", "https://google.com", NULL };
+
+static const Launcher launchers[] = {
+       /* command       name to display */
+	{ chrome,         "Chrome" },
+};
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
