@@ -20,3 +20,7 @@ dwm 启动后，自动启动某些脚本
 ### 5. dwm-hide_vacant_tags-6.2.diff
 
 隐藏不活动的 tag
+
+### 6. dwm-pertag-perseltag-6.2.diff
+
+每个 tag 显示不同的布局
