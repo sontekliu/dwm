@@ -244,7 +244,7 @@ static void zoom(const Arg *arg);
 static const char autostartblocksh[] = "~/myconfig/script/init_blocking.sh";
 static const char autostartsh[] = "~/myconfig/script/init.sh";
 static const char broken[] = "broken";
-static const char dwmdir[] = "/usr/bin/dwm";
+static const char dwmdir[] = "/usr/local/bin/dwm";
 static const char localshare[] = ".local/share";
 static char stext[256];
 static int screen;
