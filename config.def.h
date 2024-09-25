@@ -35,6 +35,9 @@ static const Launcher launchers[] = {
 	{ chrome,         "Chrome" },
 };
 
+/* Lockfile */
+static char lockfile[] = "/tmp/dwm.lock";
+
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
