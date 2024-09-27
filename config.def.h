@@ -24,6 +24,7 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+static const char *autostartscript = "$HOME/myconfig/dwm/script/autostart.sh";
 /* 调整任务栏的高度 */
 
 /* tagging */
