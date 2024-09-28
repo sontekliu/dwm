@@ -92,6 +92,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             	XK_l, 	   		spawn,          	{.v = i3lock } },                /* super + shift + l   	| 锁屏 */
 	{ MODKEY,                       	XK_a, 	   		togglescratch,  	{.v = scratchpadcmd } },	 /* super + a 			| 启动临时窗口 */
 	{ MODKEY,                       	XK_b,      		togglebar,      	{0} },			         /* super + b 			| 隐藏顶部状态栏 */
+	{ MODKEY|ShiftMask,             	XK_f,      		fullscreen,     	{0} },				 /* super + shift +f 		| 全屏当前窗口 */
 	{ MODKEY|ControlMask|ShiftMask,		XK_e, quit,           				{0} }, 				 /* super + ctl + shift + e 	| 退出DWM */
 	{ MODKEY|ControlMask|ShiftMask, 	XK_r, quit,           				{1} }, 				 /* super + ctl + shift + r 	| 重新加载DWM */
 	{ MODKEY|ShiftMask,             	XK_q,      		killclient,     	{0} }, 				 /* super + shift + q           | 关闭窗口*/
