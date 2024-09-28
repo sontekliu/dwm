@@ -45,3 +45,8 @@ dwm 启动后，自动启动某些脚本
 ### 11. dwm-fullscreen-6.2.diff
 
 当前窗口全屏，快捷键 super + shift + f
+
+### 12. dwm-alpha-20201019-61bb8b2.diff
+
+让状态栏有透明的效果
+
