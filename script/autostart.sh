@@ -7,7 +7,7 @@ fcitx5 -d
 /usr/bin/xrandr --output HDMI-A-0 --mode 2560x1440 --rate 60 &
 
 # 壁纸
-/usr/bin/feh --bg-fill --randomize /home/laoliu/myconfig/bg &
+/usr/bin/feh --bg-fill --randomize /home/laoliu/myconfig/dwm/wallpaper &
 
 # 配置透明
 picom -b
