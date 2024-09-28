@@ -89,15 +89,17 @@ static const char *rofirun[] = { "rofi", "-show", "run", "-theme", "glue_pro_blu
 
 static const char *termcmd[]  = { "st", NULL };
 static const char *i3lock[]  = { "i3lock", NULL };
+static const char *flameshot[]  = { "flameshot", "gui", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
 static const Key keys[] = {
 	/* modifier                     	key        		function        	argument */
-	{ MODKEY,                       	XK_d,      		spawn,          	{.v = rofi } },  		 /* super + d 			| 启动菜单窗口, rofi*/
-	{ MODKEY|ShiftMask,                     XK_d,      		spawn,          	{.v = rofirun } },  		 /* super + d 			| 启动菜单窗口, rofi*/
+	{ MODKEY,                       	XK_d,      		spawn,          	{.v = rofi } },  		 /* super + d 			| 启动菜单窗口, rofi drun*/
+	{ MODKEY|ShiftMask,                     XK_d,      		spawn,          	{.v = rofirun } },  		 /* super + shift + d 	        | 启动菜单窗口, rofi run*/
 	{ MODKEY,                       	XK_Return, 		spawn,          	{.v = termcmd } },               /* super + enter 		| 启动终端，此处是 st */
 	{ MODKEY|ShiftMask,             	XK_l, 	   		spawn,          	{.v = i3lock } },                /* super + shift + l   	| 锁屏 */
+	{ MODKEY|ShiftMask,             	XK_a, 	   		spawn,          	{.v = flameshot } },             /* super + shift + a   	| 截图 */
 	{ MODKEY,                       	XK_a, 	   		togglescratch,  	{.v = scratchpadcmd } },	 /* super + a 			| 启动临时窗口 */
 	{ MODKEY,                       	XK_b,      		togglebar,      	{0} },			         /* super + b 			| 隐藏顶部状态栏 */
 	{ MODKEY|ShiftMask,             	XK_f,      		fullscreen,     	{0} },				 /* super + shift +f 		| 全屏当前窗口 */
