@@ -12,7 +12,7 @@ static const char *fonts[]          = { "monospace:size=14",
 					"Symbols Nerd Font:pixelsize=16:style=Regular:antialias=true:auto:autohint=true",
 					"JoyPixels:pixelsize=16:style=Regular:antialias=true:auto:autohint=true"
 				      };
-static const char dmenufont[]       = "monospace:size=10";
+static const char dmenucmd[]        = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -84,7 +84,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
+static const char *rofi[] = { "rofi", "-show", "drun", "-theme", "glue_pro_blue.rasi"};
+static const char *rofirun[] = { "rofi", "-show", "run", "-theme", "glue_pro_blue.rasi"};
 
 static const char *termcmd[]  = { "st", NULL };
 static const char *i3lock[]  = { "i3lock", NULL };
@@ -93,7 +94,8 @@ static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34
 
 static const Key keys[] = {
 	/* modifier                     	key        		function        	argument */
-	{ MODKEY,                       	XK_d,      		spawn,          	{.v = dmenucmd } },  		 /* super + d 			| 启动菜单窗口, rofi*/
+	{ MODKEY,                       	XK_d,      		spawn,          	{.v = rofi } },  		 /* super + d 			| 启动菜单窗口, rofi*/
+	{ MODKEY|ShiftMask,                     XK_d,      		spawn,          	{.v = rofirun } },  		 /* super + d 			| 启动菜单窗口, rofi*/
 	{ MODKEY,                       	XK_Return, 		spawn,          	{.v = termcmd } },               /* super + enter 		| 启动终端，此处是 st */
 	{ MODKEY|ShiftMask,             	XK_l, 	   		spawn,          	{.v = i3lock } },                /* super + shift + l   	| 锁屏 */
 	{ MODKEY,                       	XK_a, 	   		togglescratch,  	{.v = scratchpadcmd } },	 /* super + a 			| 启动临时窗口 */
