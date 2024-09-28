@@ -10,7 +10,7 @@ static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[]          = { "monospace:size=14",
 					"WenQuanYi Micro Hei:size=14:style=Regular:antialias=true:auto:autohint=true",
 					"Symbols Nerd Font:pixelsize=16:style=Regular:antialias=true:auto:autohint=true",
-					"JoyPixels:pixelsize=12style=Regular:antialias=true:auto:autohint=true"
+					"JoyPixels:pixelsize=16:style=Regular:antialias=true:auto:autohint=true"
 				      };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
