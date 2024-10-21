@@ -87,7 +87,8 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *rofi[] = { "rofi", "-show", "drun", "-theme", "glue_pro_blue.rasi"};
 static const char *rofirun[] = { "rofi", "-show", "run", "-theme", "glue_pro_blue.rasi"};
 
-static const char *termcmd[]  = { "st", NULL };
+/* static const char *termcmd[]  = { "st", NULL }; */
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *flameshot[]  = { "flameshot", "gui", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
